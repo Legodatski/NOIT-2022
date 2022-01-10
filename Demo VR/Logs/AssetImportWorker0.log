@@ -1,130 +1,130 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.16f1 (049d6eca3c44) revision 302446'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1415; Version 2009; 64bit' Language: 'en' Physical Memory: 16253 MB
+OS: 'Windows 10 Pro; OS build 19044.1415; Version 2009; 64bit' Language: 'en' Physical Memory: 16326 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-E:\Unity\Editors\2020.3.16f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.16f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/Repositories/NOIT-2022/Demo VR
+D:/3_DavidDocuments/NOIT-2022/Demo VR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65469
-Successfully changed project path to: E:/Repositories/NOIT-2022/Demo VR
-E:/Repositories/NOIT-2022/Demo VR
+51482
+Successfully changed project path to: D:/3_DavidDocuments/NOIT-2022/Demo VR
+D:/3_DavidDocuments/NOIT-2022/Demo VR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.21 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.59 ms.
+Refreshing native plugins compatible for Editor in 107.83 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 2.03 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
-[Subsystems] Discovering subsystems at path E:/Unity/Editors/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Repositories/NOIT-2022/Demo VR/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/3_DavidDocuments/NOIT-2022/Demo VR/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
     Vendor:   
-    VRAM:     8050 MB
-    Driver:   30.0.14.7141
+    VRAM:     4018 MB
+    Driver:   30.0.14.9613
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = 'E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Unity/Editors/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/Unity/Editors/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Unity/Editors/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000673 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007764 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.22 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
+Refreshing native plugins compatible for Editor in 72.30 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.627 seconds
+- Completed reload, in  1.861 seconds
 Domain Reload Profiling:
-	ReloadAssembly (627ms)
-		BeginReloadAssembly (35ms)
+	ReloadAssembly (1861ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (319ms)
-			LoadAssemblies (34ms)
+		EndReloadAssembly (532ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (170ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (145ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (211ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (87ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002445 seconds.
+Registered in 0.016298 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 49.81 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Refreshing native plugins compatible for Editor in 67.90 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.65.0
 Mono: successfully reloaded assembly
-- Completed reload, in  0.927 seconds
+- Completed reload, in  1.557 seconds
 Domain Reload Profiling:
-	ReloadAssembly (928ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (1558ms)
+		BeginReloadAssembly (191ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (787ms)
-			LoadAssemblies (61ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1272ms)
+			LoadAssemblies (152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (217ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (371ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (584ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (249ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				RefreshPlugins (68ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (26ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
 Unloading 2712 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.9 MB.
-System memory in use after: 122.1 MB.
+System memory in use before: 122.0 MB.
+System memory in use after: 122.2 MB.
 
 Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3135.
-Total: 2.390300 ms (FindLiveObjects: 0.186800 ms CreateObjectMapping: 0.069000 ms MarkObjects: 2.061500 ms  DeleteObjects: 0.071900 ms)
+Total: 4.495100 ms (FindLiveObjects: 0.274900 ms CreateObjectMapping: 0.117500 ms MarkObjects: 4.008300 ms  DeleteObjects: 0.093200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -138,153 +138,217 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs
-  artifactKey: Guid(2987812710f5d82498876f0a50b38192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs using Guid(2987812710f5d82498876f0a50b38192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce94fd0a1a59e77f3a0c6ab1a27e82ec') in 0.006921 seconds 
-  Import took 0.010062 seconds .
+  path: Assets/ToGrab.prefab
+  artifactKey: Guid(36eb5788c872f5847906238833bc6728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToGrab.prefab using Guid(36eb5788c872f5847906238833bc6728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77196746c82249c9f4e871f3a52e50e') in 0.084463 seconds 
+  Import took 0.088356 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet_Casing.prefab
-  artifactKey: Guid(4cb20e8abae957146a8b78e670d3fe74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet_Casing.prefab using Guid(4cb20e8abae957146a8b78e670d3fe74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72be957f296f9add406ec6b37cd2b017') in 0.138936 seconds 
-  Import took 0.142257 seconds .
+  Time since last request: 0.000280 seconds.
+  path: Assets/HandGunPos.prefab
+  artifactKey: Guid(8e322decddaccfa49a06246f63c9cf0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandGunPos.prefab using Guid(8e322decddaccfa49a06246f63c9cf0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e387d7d2e2ac6e56f0aeb1d11eed2803') in 0.008637 seconds 
+  Import took 0.012922 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun
-  artifactKey: Guid(2ed4b4fee4b5e2e4f86a7c586c3ec5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun using Guid(2ed4b4fee4b5e2e4f86a7c586c3ec5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce50758272291e696e2da26aa707b665') in 0.003909 seconds 
-  Import took 0.006853 seconds .
+  Time since last request: 206.036733 seconds.
+  path: Assets/3D models
+  artifactKey: Guid(e567d1dc337a53b4d82903a1e8907406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D models using Guid(e567d1dc337a53b4d82903a1e8907406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36934a32f6664b2c757b927cd34c0bf2') in 0.027452 seconds 
+  Import took 0.032673 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet_Head.prefab
-  artifactKey: Guid(65c9f6563c561ee4e8905d1e6a32548b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet_Head.prefab using Guid(65c9f6563c561ee4e8905d1e6a32548b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c7e7c7c978330f8763136477c1d58c') in 0.016323 seconds 
-  Import took 0.019860 seconds .
+  Time since last request: 0.055596 seconds.
+  path: Assets/3D models/ak-50.fbx
+  artifactKey: Guid(f66c72c446451c34fb551b35744e6379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D models/ak-50.fbx using Guid(f66c72c446451c34fb551b35744e6379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86a84ebbfdf8d8e19d7d400f1320c46') in 0.451714 seconds 
+  Import took 0.457848 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet.prefab
-  artifactKey: Guid(674adf642abf5614aae2995443c8250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/45ACP Bullet.prefab using Guid(674adf642abf5614aae2995443c8250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119bce5ea932cd317687709ccef1caab') in 0.011197 seconds 
-  Import took 0.014710 seconds .
+  Time since last request: 0.000248 seconds.
+  path: Assets/3D models/shootingRange.fbx
+  artifactKey: Guid(becf7fe92fa2af743993aa127d9f51a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D models/shootingRange.fbx using Guid(becf7fe92fa2af743993aa127d9f51a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c873414c09d01c40a2522059888ca3a2') in 0.240787 seconds 
+  Import took 0.244894 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.001575 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver
-  artifactKey: Guid(4692567bb400b7b43bfd7e4ec6129550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver using Guid(4692567bb400b7b43bfd7e4ec6129550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1826aa7eed4a641f8517d80fb57b4aa') in 0.004874 seconds 
-  Import took 0.008002 seconds .
+  Time since last request: 73.915648 seconds.
+  path: Assets/3D models/shootingRange1.fbx
+  artifactKey: Guid(4625bebe09dbc3b418f618312d1f8f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D models/shootingRange1.fbx using Guid(4625bebe09dbc3b418f618312d1f8f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab15e750bf0a16b3266688af7822d86') in 0.201194 seconds 
+  Import took 0.206450 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.038187 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Handgun_Silver (Shooting).prefab
-  artifactKey: Guid(37e98970f8baf7647b735d9036006f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Handgun_Silver (Shooting).prefab using Guid(37e98970f8baf7647b735d9036006f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394b9932e6c99894ac04daf17261d90c') in 0.272108 seconds 
-  Import took 0.275841 seconds .
+  Time since last request: 137.229931 seconds.
+  path: Assets/3D models/shootingRange2.fbx
+  artifactKey: Guid(a93de6aef7fc4744baa523fa2b886cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D models/shootingRange2.fbx using Guid(a93de6aef7fc4744baa523fa2b886cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d8c6ca2891ab525b437f31dca077f4') in 0.208253 seconds 
+  Import took 0.215540 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Magazine_Silver.prefab
-  artifactKey: Guid(b5c250cf857e87546bfae19a751f3c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Magazine_Silver.prefab using Guid(b5c250cf857e87546bfae19a751f3c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4043d25d0a84d8f3447ad9520b8004bc') in 0.018858 seconds 
-  Import took 0.022330 seconds .
+  Time since last request: 28.352506 seconds.
+  path: Assets/shooting range
+  artifactKey: Guid(119ecc1c799fa4040be1cd933558090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range using Guid(119ecc1c799fa4040be1cd933558090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7d9993b4e81cc45a0b3b6a3f356b03') in 0.004679 seconds 
+  Import took 0.010241 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Handgun_Silver.prefab
-  artifactKey: Guid(5c59210965ffbcc4093fe99a29edb777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Handgun_Silver.prefab using Guid(5c59210965ffbcc4093fe99a29edb777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8084ae3a35c37cf5b21c0098596efe8e') in 0.023799 seconds 
-  Import took 0.027105 seconds .
+  Time since last request: 0.000718 seconds.
+  path: Assets/shooting range
+  artifactKey: Guid(119ecc1c799fa4040be1cd933558090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range using Guid(119ecc1c799fa4040be1cd933558090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7d9993b4e81cc45a0b3b6a3f356b03') in 0.005264 seconds 
+  Import took 0.009877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.051635 seconds.
+  path: Assets/shooting range/black.mat
+  artifactKey: Guid(ee6b09d9fbc0f9f48a6d2a640095b87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/black.mat using Guid(ee6b09d9fbc0f9f48a6d2a640095b87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8beac658d714725ae7cc0ed2e6804df') in 0.104726 seconds 
+  Import took 0.111239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.182652 seconds.
+  path: Assets/shooting range/dolu.mat
+  artifactKey: Guid(024822f170c216246acae8e8be4af915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/dolu.mat using Guid(024822f170c216246acae8e8be4af915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b11762a3e7519c6654486cf11701b9') in 0.013753 seconds 
+  Import took 0.018690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.440567 seconds.
+  path: Assets/shooting range/box.mat
+  artifactKey: Guid(489955bc94fe98743bf4528212b81ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/box.mat using Guid(489955bc94fe98743bf4528212b81ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25abf3bdf41633a9c40c9e783817c6ca') in 0.013059 seconds 
+  Import took 0.017536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.198001 seconds.
+  path: Assets/shooting range/num.mat
+  artifactKey: Guid(bee4eb83baec6894a9b0eafaa6195c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/num.mat using Guid(bee4eb83baec6894a9b0eafaa6195c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2858e2db906e4b7ae9f6ba6c9425642') in 0.017864 seconds 
+  Import took 0.022367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.328695 seconds.
+  path: Assets/shooting range/gay.mat
+  artifactKey: Guid(80e6af52300395a488eee5c661ed3dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/gay.mat using Guid(80e6af52300395a488eee5c661ed3dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ec82dd855de9bbabf59a9ae70fd32b') in 0.023396 seconds 
+  Import took 0.030101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.900589 seconds.
+  path: Assets/shooting range/black-white-human-target-vector-illustration-background-53140022.jpg
+  artifactKey: Guid(6be0a7d687047d64c916fd2270209956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/black-white-human-target-vector-illustration-background-53140022.jpg using Guid(6be0a7d687047d64c916fd2270209956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd64c5c89826d750bb843046a266492') in 0.072179 seconds 
+  Import took 0.076902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.896902 seconds.
+  path: Assets/shooting range/black-white-human-target-vector-illustration-background-53140022.jpg
+  artifactKey: Guid(6be0a7d687047d64c916fd2270209956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/black-white-human-target-vector-illustration-background-53140022.jpg using Guid(6be0a7d687047d64c916fd2270209956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd0bb7f5fbacd7ca5e085c321261ed1') in 0.027921 seconds 
+  Import took 0.032213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.134286 seconds.
+  path: Assets/shooting range/black.mat
+  artifactKey: Guid(ee6b09d9fbc0f9f48a6d2a640095b87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/black.mat using Guid(ee6b09d9fbc0f9f48a6d2a640095b87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d336c9eac7a3dd3b6351eb149c25b7') in 0.015525 seconds 
+  Import took 0.019852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/shooting range/box.mat
+  artifactKey: Guid(489955bc94fe98743bf4528212b81ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/box.mat using Guid(489955bc94fe98743bf4528212b81ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3b5556298757febcb7ed81d370cb34') in 0.014641 seconds 
+  Import took 0.021738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/shooting range/gay.mat
+  artifactKey: Guid(80e6af52300395a488eee5c661ed3dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/gay.mat using Guid(80e6af52300395a488eee5c661ed3dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a49453fc9180a7aeb76576f22de11b') in 0.015977 seconds 
+  Import took 0.022063 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000167 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Magazine_Silver_Full.prefab
-  artifactKey: Guid(383b1a391f98da5478a7dddc283414a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Silver/M1911 Magazine_Silver_Full.prefab using Guid(383b1a391f98da5478a7dddc283414a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac6f6be25ef399f06959278114a3d56') in 0.012665 seconds 
-  Import took 0.016129 seconds .
+  path: Assets/shooting range/num.mat
+  artifactKey: Guid(bee4eb83baec6894a9b0eafaa6195c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/num.mat using Guid(bee4eb83baec6894a9b0eafaa6195c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595ba7e10a85be6d54bc8393eb17f06b') in 0.014157 seconds 
+  Import took 0.018813 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.344597 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black (Shooting).prefab
-  artifactKey: Guid(7e7f2840eb6a6294fb9d04582dbf8079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black (Shooting).prefab using Guid(7e7f2840eb6a6294fb9d04582dbf8079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9396b3c80c594cd14f57c5f4542bc942') in 0.074577 seconds 
-  Import took 0.078542 seconds .
+  Time since last request: 0.000180 seconds.
+  path: Assets/shooting range/dolu.mat
+  artifactKey: Guid(024822f170c216246acae8e8be4af915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shooting range/dolu.mat using Guid(024822f170c216246acae8e8be4af915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c2d1e2dfdf131c72c021130722b642') in 0.014868 seconds 
+  Import took 0.020141 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Magazine_Black.prefab
-  artifactKey: Guid(1630d9b67160caa44aad0385aa9bf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Magazine_Black.prefab using Guid(1630d9b67160caa44aad0385aa9bf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58052ea0d6712ad483dd1b515028980') in 0.016393 seconds 
-  Import took 0.019701 seconds .
+  Time since last request: 183.997001 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(a2697a1804d3cf34e943a56cc32babe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(a2697a1804d3cf34e943a56cc32babe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc09107cba2d6180064c6a2a8c37a364') in 0.004637 seconds 
+  Import took 0.009510 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black.prefab
-  artifactKey: Guid(87e308cb23eea97419b3c2623d8bb3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black.prefab using Guid(87e308cb23eea97419b3c2623d8bb3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1a9b7782bc9a618c5bc3fe04bcc160') in 0.020160 seconds 
-  Import took 0.023696 seconds .
+  Time since last request: 0.061379 seconds.
+  path: Assets/Materials/Blade.mat
+  artifactKey: Guid(9c0b1c14587c5e845be28194ce063114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blade.mat using Guid(9c0b1c14587c5e845be28194ce063114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c881009c089814738b693c13d1ed97') in 0.013513 seconds 
+  Import took 0.017589 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Magazine_Black_Full.prefab
-  artifactKey: Guid(3891d67bd4812e34db02888d6b7ae428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Magazine_Black_Full.prefab using Guid(3891d67bd4812e34db02888d6b7ae428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d820c3f1a8ad57544f09fb6b4d3c93') in 0.015919 seconds 
-  Import took 0.019394 seconds .
+  Time since last request: 0.000239 seconds.
+  path: Assets/Materials/Hands.mat
+  artifactKey: Guid(b96963a3322470c40a5a4eba55abcbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Hands.mat using Guid(b96963a3322470c40a5a4eba55abcbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23047ced2a934fc2d3670d090f01e6de') in 0.012848 seconds 
+  Import took 0.017093 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black.prefab
-  artifactKey: Guid(87e308cb23eea97419b3c2623d8bb3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Handgun Black/M1911 Handgun_Black.prefab using Guid(87e308cb23eea97419b3c2623d8bb3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1a9b7782bc9a618c5bc3fe04bcc160') in 0.015093 seconds 
-  Import took 0.018873 seconds .
+  Time since last request: 0.000233 seconds.
+  path: Assets/Materials/Handle.mat
+  artifactKey: Guid(a26264973bdd9db4fb75ff4a4460a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Handle.mat using Guid(a26264973bdd9db4fb75ff4a4460a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c352567b2a70f9699f8e9e70e843371') in 0.012685 seconds 
+  Import took 0.017762 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.774763 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/Bullet_Casing.prefab
-  artifactKey: Guid(a737d62f4ff0b854a9d767507f039686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/Bullet_Casing.prefab using Guid(a737d62f4ff0b854a9d767507f039686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a59838ade0e9435ab4401889450f0e8') in 0.006626 seconds 
-  Import took 0.010075 seconds .
+  Time since last request: 0.000239 seconds.
+  path: Assets/Materials/Guard.mat
+  artifactKey: Guid(456bd7ace8a1e7c4c8c47a9cbe175505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Guard.mat using Guid(456bd7ace8a1e7c4c8c47a9cbe175505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac06816211d6f9fd47f448299ef3ed4') in 0.013135 seconds 
+  Import took 0.017739 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/Bullet_Head.prefab
-  artifactKey: Guid(9e0ef2cf9cfc11c46bbe7f28b272f6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/Bullet_Head.prefab using Guid(9e0ef2cf9cfc11c46bbe7f28b272f6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac36e21cae48cc9dbc4aea9893455a3') in 0.005779 seconds 
-  Import took 0.008968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/M1911 Magazine Base.prefab
-  artifactKey: Guid(71d42f13891e48c4487496fd15802eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/M1911 Magazine Base.prefab using Guid(71d42f13891e48c4487496fd15802eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed252f76aad74310f54f5c334bfa8cf') in 0.011667 seconds 
-  Import took 0.014882 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/M1911 Handgun Base.prefab
-  artifactKey: Guid(a78a725941312494b930d664f3b315d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nokobot/Modern Guns - Handgun/_Prefabs/Base Prefabs/M1911 Handgun Base.prefab using Guid(a78a725941312494b930d664f3b315d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8002308c1336374dd804f4d3c4b909') in 0.015954 seconds 
-  Import took 0.019184 seconds .
+  Time since last request: 0.000208 seconds.
+  path: Assets/Materials/Snapper.mat
+  artifactKey: Guid(7647fe302175cdb4186ed4ab37b88f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Snapper.mat using Guid(7647fe302175cdb4186ed4ab37b88f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0f40db8a1ab8727b2fd13536913dff') in 0.013248 seconds 
+  Import took 0.017504 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
