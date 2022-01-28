@@ -17,8 +17,9 @@ public class ShootingGrabbed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ovrGrabbable.isGrabbed && OVRInput.GetDown(shootingButton, ovrGrabbable.grabbedBy.GetController()))
+        if (ovrGrabbable.isGrabbed && OVRInput.Get(shootingButton, ovrGrabbable.grabbedBy.GetController()))
         {
+            Debug.LogWarning("Shooting");
             simpleShoot.TriggerShoot();
         }   
     }
