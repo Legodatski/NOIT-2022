@@ -4,36 +4,54 @@ using UnityEngine;
 
 public class Snapzone : MonoBehaviour
 {
+    //need trigger collider to work
+
     [SerializeField] private Transform offset;
     public bool awake = true;
 
     private bool canSnap = false;
+    private Transform item;
+    private Rigidbody rg;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (!offset)
         {
             offset = this.transform;
         }
+
+        if (awake)
+            canSnap = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<OVRGrabbable>().isGrabbed == false)
+        if (!other.GetComponent<OVRGrabbable>().isGrabbed && canSnap)
         {
-            canSnap = true;
-            other.transform.SetParent(null);
+            item = other.transform;
+            rg = item.GetComponent<Rigidbody>();
+            Snap();
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void Snap()
     {
-        if (awake && canSnap)
+        if (item)
         {
-            other.transform.position = offset.position;
-            other.transform.rotation = offset.rotation;
-        }
+            item.position = this.transform.position;
 
+            if (rg)
+                rg.isKinematic = true;
+
+            canSnap = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (item.GetComponent<OVRGrabbable>().isGrabbed)
+        {
+            canSnap = true;
+        }
     }
 }

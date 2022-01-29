@@ -23,18 +23,25 @@ public class PhysicalShooting : MonoBehaviour
     [SerializeField] private float recoilMax = 10;
     [SerializeField] private float recoilSpeed = 2;
 
+    [Header("Ammo and Reload")]
+    [SerializeField] private int maxAmmo = 30;
+    [SerializeField] private OVRInput.Button reloadTriger = OVRInput.Button.PrimaryThumbstickUp;
+
     [Header("Other")]
     [SerializeField] private Animator animator;
     [SerializeField] private OVRInput.Button shootTriger = OVRInput.Button.PrimaryIndexTrigger;
     [SerializeField] private float destroyCaseTimer = 5;
     [SerializeField] private float destroyMuzzleTimer = 1;
 
+    private int currentAmmo;
     private float recoil;
     private OVRGrabbable ovrGrabbable;
     private float fireRateTimer;
 
     private void Start()
     {
+        currentAmmo = maxAmmo;
+
         fireRateTimer = fireRate;
         ovrGrabbable = GetComponent<OVRGrabbable>();
 
@@ -45,7 +52,7 @@ public class PhysicalShooting : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (ovrGrabbable.isGrabbed && OVRInput.Get(shootTriger, ovrGrabbable.grabbedBy.GetController()) && fireRateTimer <= 0)
+        if (ovrGrabbable.isGrabbed && OVRInput.Get(shootTriger, ovrGrabbable.grabbedBy.GetController()) && fireRateTimer <= 0 && currentAmmo > 0)
         {
             if (recoil < recoilMax)
                 recoil += recoilRate;
@@ -60,7 +67,16 @@ public class PhysicalShooting : MonoBehaviour
             fireRateTimer -= Time.deltaTime;
         }
 
-        Recoil();
+
+        if (OVRInput.Get(reloadTriger, ovrGrabbable.grabbedBy.GetController()))
+        {
+            Reload();
+        }
+    }
+
+    private void Reload()
+    {
+        currentAmmo = maxAmmo;
     }
 
     private void Shoot()
@@ -77,6 +93,7 @@ public class PhysicalShooting : MonoBehaviour
             return;
         }
 
+        currentAmmo--;
         Instantiate(BulletPrefap, barrelLocation.position, new Quaternion(0, 0, 0, 0)).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * bulletPower);
     }
 
@@ -98,6 +115,7 @@ public class PhysicalShooting : MonoBehaviour
 
         }*/
 
+        //maika mu da eba
     }
     
     private void Eject()
