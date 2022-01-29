@@ -94,7 +94,9 @@ public class PhysicalShooting : MonoBehaviour
         }
 
         currentAmmo--;
-        Instantiate(BulletPrefap, barrelLocation.position, new Quaternion(0, 0, 0, 0)).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * bulletPower);
+        GameObject bullet = Instantiate(BulletPrefap, barrelLocation.position, new Quaternion(0, 0, 0, 0));
+        bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * bulletPower);
+        bullet.tag = "bullet";
     }
 
     private void Recoil()

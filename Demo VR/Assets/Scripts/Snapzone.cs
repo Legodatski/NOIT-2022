@@ -7,11 +7,15 @@ public class Snapzone : MonoBehaviour
     //need trigger collider to work
 
     [SerializeField] private Transform offset;
-    public bool awake = true;
+    [SerializeField] List<LayerMask> layersToSnap;
 
     private bool canSnap = false;
     private Transform item;
     private Rigidbody rg;
+
+    [Header("Settings")]
+    public bool awake = true;
+    public bool visibleWhenSnappedOnject = false;
 
     void Start()
     {
@@ -22,14 +26,19 @@ public class Snapzone : MonoBehaviour
 
         if (awake)
             canSnap = true;
+
+        if (layersToSnap.Count == 0)
+        {
+            layersToSnap.Add(7);
+            //Objects on layer 7 can be grab from the player
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.GetComponent<OVRGrabbable>().isGrabbed && canSnap)
+        if (!other.GetComponent<OVRGrabbable>().isGrabbed && canSnap && layersToSnap.Contains(other.gameObject.layer))
         {
             item = other.transform;
-            rg = item.GetComponent<Rigidbody>();
             Snap();
         }
     }
@@ -39,6 +48,10 @@ public class Snapzone : MonoBehaviour
         if (item)
         {
             item.position = this.transform.position;
+            rg = item.GetComponent<Rigidbody>();
+
+            if (!visibleWhenSnappedOnject)
+                this.GetComponent<MeshRenderer>().enabled = false;
 
             if (rg)
                 rg.isKinematic = true;
