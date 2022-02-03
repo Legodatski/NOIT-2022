@@ -7,15 +7,14 @@ public class Snapzone : MonoBehaviour
     //need trigger collider to work
 
     [SerializeField] private Transform offset;
-    [SerializeField] List<LayerMask> layersToSnap;
+
+    [Header("Settings")]
+    public bool awake = true;
+    public bool visibleWhenSnappedObject = false;
 
     private bool canSnap = false;
     private Transform item;
     private Rigidbody rg;
-
-    [Header("Settings")]
-    public bool awake = true;
-    public bool visibleWhenSnappedOnject = false;
 
     void Start()
     {
@@ -26,20 +25,17 @@ public class Snapzone : MonoBehaviour
 
         if (awake)
             canSnap = true;
-
-        if (layersToSnap.Count == 0)
-        {
-            layersToSnap.Add(7);
-            //Objects on layer 7 can be grab from the player
-        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.GetComponent<OVRGrabbable>().isGrabbed && canSnap && layersToSnap.Contains(other.gameObject.layer))
+        if (other)
         {
-            item = other.transform;
-            Snap();
+            if (!other.GetComponent<OVRGrabbable>().isGrabbed && canSnap)
+            {
+                item = other.transform;
+                Snap();
+            }
         }
     }
 
@@ -50,7 +46,7 @@ public class Snapzone : MonoBehaviour
             item.position = this.transform.position;
             rg = item.GetComponent<Rigidbody>();
 
-            if (!visibleWhenSnappedOnject)
+            if (!visibleWhenSnappedObject)
                 this.GetComponent<MeshRenderer>().enabled = false;
 
             if (rg)
@@ -62,9 +58,13 @@ public class Snapzone : MonoBehaviour
 
     private void Update()
     {
-        if (item.GetComponent<OVRGrabbable>().isGrabbed)
+        if (item)
         {
-            canSnap = true;
+            if (item.GetComponent<OVRGrabbable>().isGrabbed)
+            {
+                canSnap = true;
+                this.GetComponent<MeshRenderer>().enabled = true;
+            }
         }
     }
 }

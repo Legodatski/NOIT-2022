@@ -12,7 +12,7 @@ public class FollowObject : MonoBehaviour
     {
         if (ObjectToFollow == null)
         {
-            ObjectToFollow = this.transform;
+            FollowingObject = this.transform;
         }
     }
 
