@@ -31,25 +31,29 @@ public class XRshooting : MonoBehaviour
     [SerializeField] private float destroyCaseTimer = 5;
     [SerializeField] private float destroyMuzzleTimer = 1;
 
-    private int currentAmmo;
+    public int currentAmmo;
     private float recoil;
     private float fireRateTimer;
     public InputDevice targetDevice;
     private List<InputDevice> devices;
+    public bool shoot = false;
+
+    public void StartShooting() => shoot = true;
+    public void StopShooting() => shoot = false;
+
 
     private void Start()
     {
         devices = new List<InputDevice>();
 
-        currentAmmo = maxAmmo;
+
 
         fireRateTimer = fireRate;
     }
 
-    // Update is called once per frame
-    public void ActivateShooting()
+    private void FixedUpdate()
     {
-        if (fireRateTimer >= 0 && currentAmmo > 0)
+        if (fireRateTimer <= 0 && shoot && currentAmmo > 0)
         {
             if (recoil < recoilMax)
                 recoil += recoilRate;
@@ -63,9 +67,10 @@ public class XRshooting : MonoBehaviour
         {
             fireRateTimer -= Time.deltaTime;
         }
+
     }
 
-    private void Reload()
+    public void Reload()
     {
         currentAmmo = maxAmmo;
     }
@@ -115,7 +120,7 @@ public class XRshooting : MonoBehaviour
     {
         GameObject tempCase = Instantiate(CasingPrefap, casingEjectionLocation.position, casingEjectionLocation.rotation);
 
-        tempCase.AddComponent<Rigidbody>().AddExplosionForce(Random.Range(ejectPower * 0.7f, ejectPower),
+        tempCase.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(ejectPower * 0.7f, ejectPower),
             (casingEjectionLocation.position - casingEjectionLocation.right * 0.3f - casingEjectionLocation.up * 0.6f), 1f);
 
         tempCase.GetComponent<Rigidbody>().AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(100f, 1000f)), ForceMode.Impulse);
