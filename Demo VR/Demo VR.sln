@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.AudioManager", "Ocul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.LipSync", "Oculus.LipSync.csproj", "{D6E86542-10C4-A55E-BA62-FD260CE71BDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Spatializer.Editor", "Oculus.Spatializer.Editor.csproj", "{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{2B06ED62-B081-BEC5-BBD8-199DFE207606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Spatializer.Editor", "Oculus.Spatializer.Editor.csproj", "{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.VR.Editor", "Oculus.VR.Editor.csproj", "{6F5E3809-A120-0E75-CE42-FF69BE7ADF73}"
 EndProject
@@ -59,14 +59,14 @@ Global
 		{D6E86542-10C4-A55E-BA62-FD260CE71BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E86542-10C4-A55E-BA62-FD260CE71BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E86542-10C4-A55E-BA62-FD260CE71BDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B06ED62-B081-BEC5-BBD8-199DFE207606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2B06ED62-B081-BEC5-BBD8-199DFE207606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B06ED62-B081-BEC5-BBD8-199DFE207606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B06ED62-B081-BEC5-BBD8-199DFE207606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1C2AEE-0016-C865-5CB0-044DB4BC9CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F5E3809-A120-0E75-CE42-FF69BE7ADF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F5E3809-A120-0E75-CE42-FF69BE7ADF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F5E3809-A120-0E75-CE42-FF69BE7ADF73}.Release|Any CPU.ActiveCfg = Release|Any CPU

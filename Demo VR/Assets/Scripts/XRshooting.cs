@@ -46,7 +46,7 @@ public class XRshooting : MonoBehaviour
     {
         devices = new List<InputDevice>();
 
-
+        currentAmmo = maxAmmo;
 
         fireRateTimer = fireRate;
     }
