@@ -53,7 +53,7 @@ public class XRshooting : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (fireRateTimer <= 0 && shoot && currentAmmo > 0)
+        if (fireRateTimer <= 0 && shoot)
         {
             if (recoil < recoilMax)
                 recoil += recoilRate;
