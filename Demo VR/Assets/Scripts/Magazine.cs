@@ -7,7 +7,7 @@ public class Magazine : MonoBehaviour
     public XRshooting XRshooting;
     private int currentAmmo;
 
-    private void OnTriggerEnter (Collision collision)
+    private void OnTriggerEnter (Collider collision)
     {
         if (collision.gameObject.tag == "reload")
             XRshooting.Reload();
