@@ -1,0 +1,656 @@
+/target:library
+/out:Temp/Unity.InputSystem.dll
+/nowarn:0169
+/nowarn:0649
+/refout:Temp/Unity.InputSystem.dll.ref
+/unsafe
+/deterministic
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:8.0
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+/reference:"E:/Repositories/NOIT-2022/Demo VR/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+/reference:"E:/Repositories/NOIT-2022/Demo VR/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+/reference:"E:/Repositories/NOIT-2022/Demo VR/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll"
+/reference:"E:/Repositories/NOIT-2022/Demo VR/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+/reference:"E:/Repositories/NOIT-2022/Demo VR/Library/PackageCache/com.unity.render-pipelines.core@10.5.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll
+/reference:E:/Unity/Editors/2020.3.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll
+/define:CSHARP_7_3_OR_NEWER
+/define:CSHARP_7_OR_LATER
+/define:DEBUG
+/define:DISABLE_BUILTIN_INPUT_SYSTEM_OCULUS
+/define:DISABLE_BUILTIN_INPUT_SYSTEM_WINDOWSMR
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_BURST_AOT
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_INPUT_SYSTEM
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_LZMA
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MONO
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_MOVIES
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_NETWORK
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_PHYSICS
+/define:ENABLE_PROFILER
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_VIDEO
+/define:ENABLE_VIRTUALTEXTURING
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_WWW
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:INCLUDE_DYNAMIC_GI
+/define:NET_STANDARD_2_0
+/define:PLATFORM_ARCH_64
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_SUPPORTS_MONO
+/define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+/define:RENDER_SOFTWARE_CURSOR
+/define:SCENE_TEMPLATE_MODULE
+/define:TRACE
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_2020
+/define:UNITY_2020_1_OR_NEWER
+/define:UNITY_2020_2_OR_NEWER
+/define:UNITY_2020_3
+/define:UNITY_2020_3_16
+/define:UNITY_2020_3_OR_NEWER
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_64
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:UNITY_INCLUDE_TESTS
+/define:UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
+/define:UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
+/define:UNITY_INPUT_SYSTEM_ENABLE_UI
+/define:UNITY_INPUT_SYSTEM_ENABLE_VR
+/define:UNITY_POST_PROCESSING_STACK_V2
+/define:UNITY_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_TEAM_LICENSE
+/define:UNITY_XR_AVAILABLE
+/define:USE_SEARCH_ENGINE_API
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\AxisComposite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\ButtonWithOneModifier.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\ButtonWithTwoModifiers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\OneModifierComposite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\TwoModifiersComposite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\Vector2Composite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Composites\Vector3Composite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\IInputActionCollection.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\IInputInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputAction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionAsset.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionChange.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionMap.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionPhase.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionProperty.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionRebindingExtensions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionReference.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionSetupExtensions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionState.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionTrace.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputActionType.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputBinding.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputBindingComposite.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputBindingCompositeContext.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputBindingResolver.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputControlScheme.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\InputInteractionContext.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Interactions\HoldInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Interactions\MultiTapInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Interactions\PressInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Interactions\SlowTapInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Actions\Interactions\TapInteraction.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\AssemblyInfo.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\AnyKeyControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\AxisControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\ButtonControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\CommonUsages.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\DiscreteButtonControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\DoubleControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\DpadControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlAttribute.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlExtensions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlLayout.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlLayoutAttribute.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlLayoutChange.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlList.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputControlPath.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\InputProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\IntegerControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\KeyControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\AxisDeadzoneProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\ClampProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\CompensateDirectionProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\CompensateRotationProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\EditorWindowSpaceProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\InvertProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\InvertVector2Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\InvertVector3Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\NormalizeProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\NormalizeVector2Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\NormalizeVector3Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\ScaleProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\ScaleVector2Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\ScaleVector3Processor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Processors\StickDeadzoneProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\QuaternionControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\StickControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\TouchControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\TouchPhaseControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\TouchPressControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Vector2Control.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Controls\Vector3Control.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\DisableDeviceCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\EnableDeviceCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\EnableIMECompositionCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\IInputDeviceCommandInfo.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\InitiateUserAccountPairingCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\InputDeviceCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryCanRunInBackground.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryDimensionsCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryEditorWindowCoordinatesCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryEnabledStateCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryKeyNameCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryKeyboardLayoutCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryPairedUserAccountCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QuerySamplingFrequencyCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\QueryUserIdCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\RequestResetCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\RequestSyncCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\SetIMECursorPositionCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\SetSamplingFrequencyCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Commands\WarpMousePositionCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Gamepad.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Haptics\DualMotorRumble.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Haptics\DualMotorRumbleCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Haptics\IDualMotorRumble.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Haptics\IHaptics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\IEventMerger.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\IEventPreProcessor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\IInputUpdateCallbackReceiver.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\ITextInputReceiver.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\InputDevice.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\InputDeviceBuilder.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\InputDeviceChange.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\InputDeviceDescription.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\InputDeviceMatcher.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Joystick.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Keyboard.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Mouse.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Pen.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Pointer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Precompiled\FastKeyboard.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Precompiled\FastMouse.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Precompiled\FastMouse.partial.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Precompiled\FastTouchscreen.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Remote\InputRemoting.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Remote\RemoteInputPlayerConnection.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Sensor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\Touchscreen.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Devices\TrackedDevice.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionAssetManager.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionEditorToolbar.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionEditorWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionPropertiesView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionTreeView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputActionTreeViewItems.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\InputBindingPropertiesView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\NameAndParameterListView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\ParameterListView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetEditor\PropertiesViewBase.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetImporter\InputActionAssetEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetImporter\InputActionCodeGenerator.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetImporter\InputActionImporter.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\AssetImporter\InputActionImporterEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\BuildPipeline\LinkFileGenerator.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\IInputControlPickerLayout.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\InputControlDropdownItem.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\InputControlPathEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\InputControlPicker.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\InputControlPickerDropdown.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\InputControlPickerState.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\Layouts\DefaultInputControlPickerLayout.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\ControlPicker\Layouts\TouchscreenControlPickerLayout.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Debugger\InputActionDebuggerWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Debugger\InputDebuggerWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Debugger\InputDeviceDebuggerWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\DeviceSimulator\InputSystemPlugin.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\DownloadableSample.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\EditorInputControlLayoutCache.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\InputDiagnostics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\InputLayoutCodeGenerator.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\InputParameterEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdown.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownDataSource.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownGUI.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownItem.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownState.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\CallbackDataSource.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\AdvancedDropdown\MultiLevelDataSource.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\EditorHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\GUIHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\InputActionSerializationHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\InputControlTreeView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\InputEventTreeView.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\InputStateWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\SerializedPropertyHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Internal\TreeViewHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\PropertyDrawers\InputActionDrawer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\PropertyDrawers\InputActionDrawerBase.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\PropertyDrawers\InputActionMapDrawer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\PropertyDrawers\InputActionPropertyDrawer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\PropertyDrawers\InputControlPathDrawer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Settings\EditorPlayerSettingHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Settings\InputEditorUserSettings.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Settings\InputSettingsBuildProvider.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Editor\Settings\InputSettingsProvider.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\ActionEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\DeltaStateEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\DeviceConfigurationEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\DeviceRemoveEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\DeviceResetEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\IInputEventTypeInfo.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\IMECompositionEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEventBuffer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEventListener.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEventPtr.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEventStream.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\InputEventTrace.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\StateEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Events\TextEvent.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\IInputDiagnostics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\IInputRuntime.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputAnalytics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputExtensions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputFeatureNames.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputManager.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputMetrics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputSettings.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputSystem.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputSystemObject.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\InputUpdateType.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\NativeInputRuntime.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Android\AndroidAxis.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Android\AndroidGameController.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Android\AndroidKeyCode.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Android\AndroidSensors.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Android\AndroidSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\DualShock\DualShockGamepad.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\DualShock\DualShockGamepadHID.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\DualShock\DualShockSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\DualShock\FastDualShock4GamepadHID.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\DualShock\IDualShockHaptics.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\EnhancedTouch\EnhancedTouchSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\EnhancedTouch\Finger.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\EnhancedTouch\Touch.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\EnhancedTouch\TouchHistory.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\EnhancedTouch\TouchSimulation.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\HID\HID.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\HID\HIDDescriptorWindow.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\HID\HIDParser.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\HID\HIDSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Linux\LinuxSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Linux\SDLDeviceBuilder.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\OnScreen\OnScreenButton.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\OnScreen\OnScreenControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\OnScreen\OnScreenStick.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\OnScreen\OnScreenSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\DefaultInputActions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\InputValue.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerInput.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerInputEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerInputManager.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerInputManagerEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerJoinBehavior.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\PlayerInput\PlayerNotifications.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\IStreamControllerAPI.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\SteamController.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\SteamControllerType.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\SteamHandle.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\SteamIGAConverter.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Steam\SteamSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Switch\SwitchProControllerHID.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Switch\SwitchSupportHID.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\BaseInputOverride.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\ExtendedAxisEventData.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\ExtendedPointerEventData.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\InputSystemUIInputModule.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\InputSystemUIInputModuleEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\MultiplayerEventSystem.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\NavigationModel.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\PointerModel.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\StandaloneInputModuleEditor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\TrackedDeviceRaycaster.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\UISupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UI\VirtualMouseInput.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\UnityRemote\UnityRemoteSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Users\InputUser.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Users\InputUserAccountHandle.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Users\InputUserChange.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Users\InputUserPairingOptions.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\Users\InputUserSettings.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\WebGL\WebGLGamepad.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\WebGL\WebGLJoystick.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\WebGL\WebGLSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XInput\IXboxOneRumble.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XInput\XInputController.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XInput\XInputControllerWindows.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XInput\XInputSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XInput\XboxGamepadMacOS.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Controls\PoseControl.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Devices\GoogleVR.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Devices\Oculus.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Devices\OpenVR.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Devices\WindowsMR.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\GenericXRDevice.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Haptics\BufferedRumble.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Haptics\GetCurrentHapticStateCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Haptics\GetHapticCapabilitiesCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Haptics\SendBufferedHapticsCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\Haptics\SendHapticImpulseCommand.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\TrackedPoseDriver.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\XRLayoutBuilder.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\XR\XRSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\IOSGameController.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\InputSettingsiOS.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\InputSettingsiOSProvider.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\iOSPostProcessBuild.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\iOSStepCounter.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Plugins\iOS\iOSSupport.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\IInputStateCallbackReceiver.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\IInputStateChangeMonitor.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\IInputStateTypeInfo.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\InputState.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\InputStateBlock.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\InputStateBuffers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\State\InputStateHistory.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\ArrayHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\CSharpCodeHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\CallbackArray.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Comparers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\DelegateHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\DisplayStringFormatAttribute.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\DynamicBitfield.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\ExceptionHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\FourCC.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\InlinedArray.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\InternedString.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\JsonParser.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\MemoryHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\MiscHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\NameAndParameters.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\NamedValue.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\NumberHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\ForDeviceEventObservable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\Observable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\Observer.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\SelectManyObservable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\SelectObservable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\TakeNObservable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Observables\WhereObservable.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\OneOrMore.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\PrimitiveValue.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\ReadOnlyArray.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\SavedState.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\StringHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\Substring.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\TypeHelpers.cs"
+"E:\Repositories\NOIT-2022\Demo VR\Library\PackageCache\com.unity.inputsystem@1.2.0\InputSystem\Utilities\TypeTable.cs"
