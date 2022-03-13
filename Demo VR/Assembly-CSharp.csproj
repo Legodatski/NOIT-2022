@@ -131,7 +131,6 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
     <Compile Include="Assets\Scripts\PhysicalShooting.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
-    <Compile Include="Assets\Kandooz\KVR\Scripts\MonoBehaviours\RigVisualizerEditor.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarTouchController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
     <Compile Include="Assets\Kandooz\KVR\Scripts\Classes\TweenableFloat.cs" />
@@ -226,6 +225,8 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+    <Compile Include="Assets\Scripts\Part.cs" />
+    <Compile Include="Assets\Kandooz\KVR\Scripts\MonoBehaviours\RigVisualizerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />

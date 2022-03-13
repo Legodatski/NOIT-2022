@@ -14,28 +14,21 @@ public class XRshooting : MonoBehaviour
     [SerializeField] private Transform barrelLocation;
     [SerializeField] private Transform casingEjectionLocation;
 
+    [Header("Parts")]
+    [SerializeField] private List<Part> Parts;
+
     [Header("Bullet Values")]
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private float bulletPower = 200;
     [SerializeField] private float ejectPower = 30;
-
-    [Header("Recoil")]
-    [SerializeField] private float recoilRate = 0.1f;
-    [SerializeField] private float recoilMax = 10;
-
-    [Header("Ammo and Reload")]
     [SerializeField] private int maxAmmo = 30;
-    [SerializeField] private float reloadDuration = 5;
 
     [Header("Other")]
     [SerializeField] private float destroyCaseTimer = 5;
     [SerializeField] private float destroyMuzzleTimer = 1;
 
     public int currentAmmo;
-    private float recoil;
     private float fireRateTimer;
-    public InputDevice targetDevice;
-    private List<InputDevice> devices;
     public bool shoot = false;
 
     public void StartShooting() => shoot = true;
@@ -44,20 +37,13 @@ public class XRshooting : MonoBehaviour
 
     private void Start()
     {
-        devices = new List<InputDevice>();
-
-        currentAmmo = maxAmmo;
-
         fireRateTimer = fireRate;
     }
 
     private void FixedUpdate()
     {
-        if (fireRateTimer <= 0 && shoot)
+        if (fireRateTimer <= 0 && shoot && currentAmmo > 0 && IsBuild())
         {
-            if (recoil < recoilMax)
-                recoil += recoilRate;
-
             fireRateTimer = fireRate;
             Debug.LogWarning("Shooting");
             Shoot();
@@ -95,27 +81,6 @@ public class XRshooting : MonoBehaviour
         bullet.tag = "bullet";
     }
 
-    private void Recoil()
-    {
-        /*if (recoil > 0)
-        {
-            var maxRecoil = Quaternion.Euler(recoilMax, 0, 0);
-            // Dampen towards the target rotation
-            barrelLocation.rotation = Quaternion.Slerp(barrelLocation.rotation, maxRecoil, Time.deltaTime * recoilSpeed);
-            recoil -= Time.deltaTime;
-        }
-        else
-        {
-            recoil = 0;
-            var minRecoil = Quaternion.Euler(0, -90, 0);
-            // Dampen towards the target rotation
-            barrelLocation.rotation = Quaternion.Slerp(barrelLocation.rotation, minRecoil, Time.deltaTime * recoilSpeed);
-
-        }*/
-
-        //maika mu da eba
-    }
-
     private void Eject()
     {
         GameObject tempCase = Instantiate(CasingPrefap, casingEjectionLocation.position, casingEjectionLocation.rotation);
@@ -126,5 +91,16 @@ public class XRshooting : MonoBehaviour
         tempCase.GetComponent<Rigidbody>().AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(100f, 1000f)), ForceMode.Impulse);
 
         Destroy(tempCase, destroyCaseTimer);
+    }
+
+    private bool IsBuild()
+    {
+        foreach (var part in Parts)
+        {
+            if (!part.Connected())
+                return false;
+        }
+
+        return true;
     }
 }

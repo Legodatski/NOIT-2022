@@ -5,17 +5,13 @@ using UnityEngine;
 public class Magazine : MonoBehaviour
 {
     public XRshooting XRshooting;
-    private int currentAmmo;
 
-    private void OnTriggerEnter (Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "reload")
+        if (collision.gameObject.tag == "Ak47")
+        {
             XRshooting.Reload();
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
+            Debug.Log("Reload");
+        }
     }
 }
