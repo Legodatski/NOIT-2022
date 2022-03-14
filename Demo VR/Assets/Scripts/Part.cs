@@ -10,16 +10,24 @@ public class Part : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ak47")
         {
-            Debug.Log("Connected");
-            IsConnected = false;
+            Debug.Log("Connected - " + gameObject.name);
+            IsConnected = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Ak47")
+        {
+            IsConnected = true;
         }
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag == "AK47")
+        if (collision.gameObject.tag == "Ak47")
         {
-            Debug.Log("Disonnected");
+            Debug.Log("Disonnected - " + gameObject.name);
             IsConnected = false;
         }
     }

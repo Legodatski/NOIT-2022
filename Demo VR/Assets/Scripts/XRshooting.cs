@@ -10,12 +10,11 @@ public class XRshooting : MonoBehaviour
     public GameObject CasingPrefap;
     public GameObject MuzzleFlastPrefap;
 
+    [SerializeField] private List<Part> Parts;
+
     [Header("Locations")]
     [SerializeField] private Transform barrelLocation;
     [SerializeField] private Transform casingEjectionLocation;
-
-    [Header("Parts")]
-    [SerializeField] private List<Part> Parts;
 
     [Header("Bullet Values")]
     [SerializeField] private float fireRate = 0.5f;
