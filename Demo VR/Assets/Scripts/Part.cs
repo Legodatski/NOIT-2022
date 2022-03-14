@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Part : MonoBehaviour
 {
-    bool IsConnected = false;
+    public bool IsConnected = false;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -31,6 +31,4 @@ public class Part : MonoBehaviour
             IsConnected = false;
         }
     }
-
-    public bool Connected() => IsConnected;
 }

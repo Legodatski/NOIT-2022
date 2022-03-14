@@ -96,7 +96,7 @@ public class XRshooting : MonoBehaviour
     {
         foreach (var part in Parts)
         {
-            if (!part.Connected())
+            if (!part.IsConnected)
                 return false;
         }
 
