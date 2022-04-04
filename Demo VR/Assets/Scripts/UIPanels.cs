@@ -42,7 +42,7 @@ public class UIPanels : MonoBehaviour
         }
         catch (Exception ex)
         {
-            throw new Exception(ex.Message);
+            Debug.Log(ex.Message);
         }
     }
 }
