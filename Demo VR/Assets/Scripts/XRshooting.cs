@@ -25,6 +25,7 @@ public class XRshooting : MonoBehaviour
     [Header("Other")]
     [SerializeField] private float destroyCaseTimer = 5;
     [SerializeField] private float destroyMuzzleTimer = 1;
+    [SerializeField] private bool test = false;
 
     public int currentAmmo;
     private float fireRateTimer;
@@ -41,6 +42,8 @@ public class XRshooting : MonoBehaviour
 
     private void FixedUpdate()
     {
+        test = IsBuild();
+
         if (fireRateTimer <= 0 && shoot && currentAmmo > 0 && IsBuild())
         {
             fireRateTimer = fireRate;

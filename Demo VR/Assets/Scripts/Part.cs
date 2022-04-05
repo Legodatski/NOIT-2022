@@ -5,13 +5,16 @@ using UnityEngine;
 public class Part : MonoBehaviour
 {
     public bool IsConnected = false;
-    bool CorrectPlace = false;
+    [SerializeField] private bool CorrectPlace = false;
 
     public void SetCorrectPlaceTrue() => CorrectPlace = true;
+
     public void SetCorrectPlaceFalse() => CorrectPlace = false;
 
     private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log(collision.gameObject.tag);
+
         if (collision.gameObject.tag == "Ak47" && CorrectPlace)
         {
             Debug.Log("Connected - " + gameObject.name);
@@ -32,7 +35,7 @@ public class Part : MonoBehaviour
         if (collision.gameObject.tag == "Ak47" && CorrectPlace)
         {
             Debug.Log("Disonnected - " + gameObject.name);
-            //IsConnected = false;
+            IsConnected = false;
         }
     }
 }
