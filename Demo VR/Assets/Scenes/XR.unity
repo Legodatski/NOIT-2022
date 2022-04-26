@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 29157805}
   m_Layer: 0
   m_Name: GasBulletOutDetection
-  m_TagString: Untagged
+  m_TagString: GasBulletOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 229518413}
   m_Layer: 0
   m_Name: DustCoverDetection
-  m_TagString: Untagged
+  m_TagString: DustCover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -956,6 +956,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236700355}
   m_CullTransparentMesh: 1
+--- !u!1 &275342648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275342649}
+  m_Layer: 0
+  m_Name: rectTrGasBulletOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275342649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275342648}
+  m_LocalRotation: {x: -0, y: -0.000000029802322, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5299991, y: 1.369276, z: 0.56200147}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073264008}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280423277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1095,7 @@ GameObject:
   - component: {fileID: 330138406}
   m_Layer: 0
   m_Name: Magazine
-  m_TagString: Untagged
+  m_TagString: Magazine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1216,7 +1246,7 @@ RectTransform:
   - {fileID: 2046212798}
   - {fileID: 963445588}
   m_Father: {fileID: 2073264008}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1540,6 +1570,36 @@ Transform:
   - {fileID: 5048908390253768791}
   - {fileID: 6154544151201039187}
   m_Father: {fileID: 6154544150849477539}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &464731587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464731588}
+  m_Layer: 0
+  m_Name: rectTrMagazine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &464731588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464731587}
+  m_LocalRotation: {x: -0, y: -0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: 1.3545892, y: 1.369276, z: 0.38676572}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073264008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &477006347
@@ -3304,7 +3364,7 @@ GameObject:
   - component: {fileID: 963445593}
   m_Layer: 0
   m_Name: MagazineDetection
-  m_TagString: Untagged
+  m_TagString: Magazine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3904,6 +3964,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1384246709692973820, guid: 0ec86dbb81dc4564b829269ed14aee08, type: 3}
   m_PrefabInstance: {fileID: 1173487011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1074834396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074834397}
+  m_Layer: 0
+  m_Name: rectTrRecoilSprion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074834397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074834396}
+  m_LocalRotation: {x: -0, y: -0.000000029802322, z: -0, w: 1}
+  m_LocalPosition: {x: 1.3358989, y: 1.369276, z: 0.367903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073264008}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1092291899
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,7 +4527,7 @@ GameObject:
   - component: {fileID: 1144017740}
   m_Layer: 0
   m_Name: RecoilSpringDetection
-  m_TagString: Untagged
+  m_TagString: RecoilSpring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5258,6 +5348,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7f8234c5dbb8664087d602aec86ae6b, type: 3}
+--- !u!1 &1419509899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419509900}
+  m_Layer: 0
+  m_Name: Foloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1419509900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419509899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 77.83999, y: -19.659908, z: 37.174946}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1856863190}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438716385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,6 +5650,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442527830}
   m_CullTransparentMesh: 1
+--- !u!1 &1443923763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443923764}
+  m_Layer: 0
+  m_Name: rectTrDustCover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443923764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443923763}
+  m_LocalRotation: {x: -0, y: -0.000000029802322, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6439998, y: 1.369276, z: 0.6760011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073264008}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1462119239
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,7 +6456,7 @@ GameObject:
   - component: {fileID: 1730783747}
   m_Layer: 0
   m_Name: DustCover
-  m_TagString: Untagged
+  m_TagString: DustCover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6325,7 +6476,7 @@ RectTransform:
   - {fileID: 2046261984}
   - {fileID: 229518411}
   m_Father: {fileID: 2073264008}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6627,7 +6778,7 @@ GameObject:
   - component: {fileID: 1762676447}
   m_Layer: 0
   m_Name: RecoilSpring
-  m_TagString: Untagged
+  m_TagString: RecoilSpring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6647,7 +6798,7 @@ RectTransform:
   - {fileID: 1191620931}
   - {fileID: 1144017739}
   m_Father: {fileID: 2073264008}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7171,6 +7322,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831418884}
   m_CullTransparentMesh: 1
+--- !u!1 &1856863189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856863190}
+  - component: {fileID: 1856863192}
+  - component: {fileID: 1856863191}
+  m_Layer: 0
+  m_Name: Colider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856863190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856863189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.99, y: 0.305, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1419509900}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856863191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856863189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c03fb076056ec74eada3091e7d38da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magazineTr: {fileID: 464731588}
+  dustCoverTr: {fileID: 1443923764}
+  gasBulletOutTr: {fileID: 275342649}
+  recoilSpringTr: {fileID: 1074834397}
+  magazine: {fileID: 330138405}
+  dustCover: {fileID: 1730783745}
+  gasBulletOut: {fileID: 1984602882}
+  recoilSpring: {fileID: 1762676443}
+--- !u!65 &1856863192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856863189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.650749, y: 0.46870995, z: 5.6619606}
+  m_Center: {x: -1.5493889, y: -0.26564503, z: -0.5897198}
 --- !u!1 &1861766548
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,7 +7909,7 @@ GameObject:
   - component: {fileID: 1984602884}
   m_Layer: 0
   m_Name: GasBulletOut
-  m_TagString: Untagged
+  m_TagString: GasBulletOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7713,7 +7929,7 @@ RectTransform:
   - {fileID: 145361097}
   - {fileID: 29157803}
   m_Father: {fileID: 2073264008}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8261,6 +8477,10 @@ Transform:
   m_LocalPosition: {x: 82.525, y: -19.996, z: 37.758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 464731588}
+  - {fileID: 1443923764}
+  - {fileID: 275342649}
+  - {fileID: 1074834397}
   - {fileID: 330138409}
   - {fileID: 1730783746}
   - {fileID: 1984602883}
@@ -9547,7 +9767,7 @@ GameObject:
   - component: {fileID: 2490194675080446204}
   m_Layer: 9
   m_Name: GasBulletOutMesh
-  m_TagString: Untagged
+  m_TagString: GasBulletOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12409,7 +12629,7 @@ GameObject:
   - component: {fileID: 6154544150834089317}
   m_Layer: 0
   m_Name: MagazineMesh
-  m_TagString: Untagged
+  m_TagString: Magazine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13736,7 +13956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65135627714cf85409921be39ca7a4eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ray: {fileID: 2100000, guid: 0fd8cd6065aa18e4ba5f08812e1401c7, type: 2}
 --- !u!114 &6270176828049722738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15013,7 +15232,7 @@ GameObject:
   - component: {fileID: 6857694479600115835}
   m_Layer: 0
   m_Name: DustCoverMesh
-  m_TagString: Untagged
+  m_TagString: DustCover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16261,7 +16480,7 @@ GameObject:
   - component: {fileID: 8160168807840091570}
   m_Layer: 9
   m_Name: RecoilSpringMesh
-  m_TagString: Untagged
+  m_TagString: RecoilSpring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

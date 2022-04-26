@@ -13,7 +13,7 @@ public class Part : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.tag);
 
         if (collision.gameObject.tag == "Ak47" && CorrectPlace)
         {

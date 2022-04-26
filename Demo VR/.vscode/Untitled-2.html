@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+<script>
+let responseObj = JSON;
+
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+getJSON('https://api.chucknorris.io/jokes/random',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    responseObj = data.value;
+    console.log(responseObj);
+  }
+});
+
+  //var json_obj = JSON.parse('{"quote_body":"A major part of love is commitment. If we are committed to someone, if Im committed to loving you, then its not possible for me to fall out of love.","quote_author":"bell hooks","quote_vendor":"https:\/\/www.quotepub.com\/"}');
+  console.log(quote_value = responseObj.value);
+  let quote_id = responseObj.id;
+</script>
+
+</html> 

@@ -7,6 +7,10 @@ TagManager:
   - bullet
   - reload
   - Ak47
+  - Magazine
+  - DustCover
+  - GasBulletOut
+  - RecoilSpring
   layers:
   - Default
   - TransparentFX
