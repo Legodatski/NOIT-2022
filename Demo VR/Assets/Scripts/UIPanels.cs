@@ -6,6 +6,7 @@ using UnityEngine.XR;
 
 public class UIPanels : MonoBehaviour
 {
+    public AudioSource sound;
     public List<GameObject> controls = new List<GameObject>();
     int currentElementIndex = 0;
     int firstElementIndex = 0;
@@ -28,6 +29,7 @@ public class UIPanels : MonoBehaviour
                     controls[currentElementIndex].SetActive(false);
                     controls[currentElementIndex + 1].SetActive(true);
                     currentElementIndex++;
+                    sound.Play();
                 }
             }
             if (currentElementIndex > firstElementIndex)
@@ -37,6 +39,7 @@ public class UIPanels : MonoBehaviour
                     controls[currentElementIndex].SetActive(false);
                     controls[currentElementIndex - 1].SetActive(true);
                     currentElementIndex--;
+                    sound.Play();
                 }
             }
         }

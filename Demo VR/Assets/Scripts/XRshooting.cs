@@ -11,6 +11,8 @@ public class XRshooting : MonoBehaviour
     public GameObject MuzzleFlastPrefap;
 
     [SerializeField] private List<Part> Parts;
+    [Header("Sounds")]
+    public AudioSource ShootingSound;
 
     [Header("Locations")]
     [SerializeField] private Transform barrelLocation;
@@ -31,8 +33,14 @@ public class XRshooting : MonoBehaviour
     private float fireRateTimer;
     public bool shoot = false;
 
-    public void StartShooting() => shoot = true;
-    public void StopShooting() => shoot = false;
+    public void StartShooting()
+    {
+        shoot = true;
+    }
+    public void StopShooting()
+    {
+        shoot = false;
+    }
 
 
     private void Start()
@@ -76,7 +84,7 @@ public class XRshooting : MonoBehaviour
             Debug.LogError("404: Bullet prefap not found!");
             return;
         }
-
+        ShootingSound.Play();
         currentAmmo--;
         GameObject bullet = Instantiate(BulletPrefap, barrelLocation.position, new Quaternion(0, 0, 0, 0));
         bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * bulletPower);
