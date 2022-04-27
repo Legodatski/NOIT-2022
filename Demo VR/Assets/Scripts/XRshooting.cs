@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.XR;
 
 public class XRshooting : MonoBehaviour
@@ -32,6 +33,7 @@ public class XRshooting : MonoBehaviour
     public int currentAmmo;
     private float fireRateTimer;
     public bool shoot = false;
+    private XRController xr;
 
     public void StartShooting()
     {
@@ -45,6 +47,7 @@ public class XRshooting : MonoBehaviour
 
     private void Start()
     {
+        xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
         fireRateTimer = fireRate;
     }
 
@@ -85,6 +88,7 @@ public class XRshooting : MonoBehaviour
             return;
         }
         ShootingSound.Play();
+        
         currentAmmo--;
         GameObject bullet = Instantiate(BulletPrefap, barrelLocation.position, new Quaternion(0, 0, 0, 0));
         bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * bulletPower);
