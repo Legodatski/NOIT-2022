@@ -47,7 +47,6 @@ public class XRshooting : MonoBehaviour
 
     private void Start()
     {
-        xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
         fireRateTimer = fireRate;
     }
 
