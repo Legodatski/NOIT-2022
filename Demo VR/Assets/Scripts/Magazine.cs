@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Magazine : MonoBehaviour
 {
-    public XRshooting XRshooting;
+    public XRshooting xr;
 
-    private void OnTriggerEnter(Collider collision)
+    public void Placed()
     {
-        if (collision.gameObject.tag == "Ak47")
-        {
-            XRshooting.Reload();
-            Debug.Log("Reload");
-        }
+        xr.currentAmmo = xr.maxAmmo;
     }
 }

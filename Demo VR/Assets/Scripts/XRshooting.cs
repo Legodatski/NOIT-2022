@@ -11,7 +11,6 @@ public class XRshooting : MonoBehaviour
     public GameObject CasingPrefap;
     public GameObject MuzzleFlastPrefap;
 
-    [SerializeField] private List<Part> Parts;
     [Header("Sounds")]
     public AudioSource ShootingSound;
 
@@ -23,17 +22,15 @@ public class XRshooting : MonoBehaviour
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private float bulletPower = 200;
     [SerializeField] private float ejectPower = 30;
-    [SerializeField] private int maxAmmo = 30;
+    public int maxAmmo = 30;
 
     [Header("Other")]
     [SerializeField] private float destroyCaseTimer = 5;
     [SerializeField] private float destroyMuzzleTimer = 1;
-    [SerializeField] private bool test = false;
 
     public int currentAmmo;
     private float fireRateTimer;
     public bool shoot = false;
-    private XRController xr;
 
     public void StartShooting()
     {
@@ -52,9 +49,8 @@ public class XRshooting : MonoBehaviour
 
     private void FixedUpdate()
     {
-        test = IsBuild();
 
-        if (fireRateTimer <= 0 && shoot && currentAmmo > 0 && IsBuild())
+        if (fireRateTimer <= 0 && shoot && currentAmmo > 0)
         {
             fireRateTimer = fireRate;
             Debug.LogWarning("Shooting");
@@ -104,16 +100,5 @@ public class XRshooting : MonoBehaviour
         tempCase.GetComponent<Rigidbody>().AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(100f, 1000f)), ForceMode.Impulse);
 
         Destroy(tempCase, destroyCaseTimer);
-    }
-
-    private bool IsBuild()
-    {
-        foreach (var part in Parts)
-        {
-            if (!part.IsConnected)
-                return false;
-        }
-
-        return true;
     }
 }
