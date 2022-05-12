@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class Floor : MonoBehaviour
 {
-    public Transform player;
-
     public Transform magazineTr;
     public Transform dustCoverTr;
     public Transform gasBulletOutTr;
     public Transform recoilSpringTr;
-
-    public GameObject magazine;
-    public GameObject dustCover;
-    public GameObject gasBulletOut;
-    public GameObject recoilSpring;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,7 +23,7 @@ public class Floor : MonoBehaviour
                 other.transform.position = gasBulletOutTr.position;
                 break;
             case "RecoilSpring":
-                recoilSpring.transform.position = recoilSpringTr.position;
+                other.transform.position = recoilSpringTr.position;
                 break;
         }
     }

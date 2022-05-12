@@ -11,6 +11,7 @@ TagManager:
   - DustCover
   - GasBulletOut
   - RecoilSpring
+  - Bullet
   layers:
   - Default
   - TransparentFX
