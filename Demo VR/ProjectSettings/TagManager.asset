@@ -12,6 +12,7 @@ TagManager:
   - GasBulletOut
   - RecoilSpring
   - Bullet
+  - Target
   layers:
   - Default
   - TransparentFX
