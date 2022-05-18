@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class TargetController : MonoBehaviour
 {
     public GameObject bulletImpact;
+    public GameObject textToDelete;
+    public GameObject youWon;
     public Text scoreField;
-    private int score = 0;
+    public int score = 0;
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -15,11 +17,20 @@ public class TargetController : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.collider.tag == "bullet")
         { 
-            GameObject impactInstance = Instantiate(bulletImpact, collision.transform.position, new Quaternion(0, 0, 0, 0));
+            GameObject impactInstance = Instantiate(bulletImpact, collision.transform.position, bulletImpact.transform.rotation);
             score++;
             Destroy(collision.gameObject);
 
-            scoreField.text = score.ToString();
+            if (score >= 100)
+            {
+                scoreField.text = "ти победи!";
+                textToDelete.SetActive(false);
+                youWon.SetActive(true);
+            }
+            else
+            {
+                scoreField.text = score.ToString();
+            }
         }
     }
 }

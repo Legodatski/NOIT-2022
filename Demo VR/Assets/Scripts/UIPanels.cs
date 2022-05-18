@@ -10,6 +10,8 @@ public class UIPanels : MonoBehaviour
     public List<GameObject> controls = new List<GameObject>();
     int currentElementIndex = 0;
     int firstElementIndex = 0;
+    public GameObject ammoStock;
+    public GameObject ammoStockLocation;
     public int lastElementIndex
     {
         get
@@ -20,6 +22,10 @@ public class UIPanels : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("Fire3"))
+        {
+            GameObject impactInstance = Instantiate(ammoStock, ammoStockLocation.transform.position, new Quaternion(0, 0, 0, 0));
+        }
         try
         {
             if(currentElementIndex < lastElementIndex)
