@@ -116,8 +116,6 @@ public class PhysicalShooting : MonoBehaviour
             barrelLocation.rotation = Quaternion.Slerp(barrelLocation.rotation, minRecoil, Time.deltaTime * recoilSpeed);
 
         }*/
-
-        //maika mu da eba
     }
     
     private void Eject()
